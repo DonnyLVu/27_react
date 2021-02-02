@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { getCharacters } from '../../services/AvatarApi';
 import CharacterList from './CharacterLists';
 
-export default class AllCharacters extends Component {
+export default class AllCharacter extends Component {
   state = {
     characters: []
   };
