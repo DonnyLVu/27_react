@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { getCharacters } from '..';
+import { getCharacters } from '../../services/AvatarApi';
 import CharacterList from './CharacterLists';
 
 export default class AllCharacters extends Component {
