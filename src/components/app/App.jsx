@@ -4,8 +4,8 @@ import {
   Switch,
   Route
 } from 'react-router-dom';
-import AllCharacters from '../characters/AllCharacters';
-import Details from '../Detail';
+import AllCharacter from '../character/AllCharacter';
+import Character from '../character/Character';
 
 const App = () => {
   return (
@@ -16,12 +16,12 @@ const App = () => {
             <Route
               path="/"
               exact
-              render={routerProps => <AllCharacters {...routerProps} />}
+              render={routerProps => <AllCharacter {...routerProps} />}
             />
             <Route
-              path="/details"
+              path="/:id"
               exact
-              render={routerProps => <Details {...routerProps} />}
+              render={routerProps => <Character {...routerProps} />}
             />
           </Switch>
         </Router>

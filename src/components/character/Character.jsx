@@ -1,9 +1,16 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-export default function Character() {
-  return (
-    <div>
-      Characters
-    </div>
-  );
-}
+const Character = ({ name, photoUrl }) => (
+  <figure>
+    <figcaption>{name}</figcaption>
+    <img src={photoUrl} />
+  </figure>
+);
+
+Character.propTypes = {
+  name: PropTypes.string.isRequired,
+  photoUrl: PropTypes.string.isRequired
+};
+
+export default Character;
