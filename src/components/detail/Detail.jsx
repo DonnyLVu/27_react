@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-export default class ListItem extends Component {
+export default class Detail extends Component {
   render() {
     return (
       <div>
-        List Item
+        Detail Page
       </div>
     );
   }
