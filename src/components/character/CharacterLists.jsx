@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const CharacterList = ({ characters }) => {
   const renderedCharacters = characters.map(character => (
-    <li key={character.id}>
+    <li key={character._id}>
       <Character {...character} />
     </li>
   ));
@@ -18,10 +18,9 @@ const CharacterList = ({ characters }) => {
 
 CharacterList.propTypes = {
   characters: PropTypes.arrayOf(PropTypes.shape({
-    _id: PropTypes.arrayOf.isRequired,
-    name: PropTypes.arrayOf.isRequired,
-    photoUrl: PropTypes.arrayOf.isRequired
-    // affiliation: PropTypes.arrayOf.isRequired
+    _id: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    photoUrl: PropTypes.string
   })).isRequired
 };
 

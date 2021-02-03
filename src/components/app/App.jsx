@@ -5,7 +5,7 @@ import {
   Route
 } from 'react-router-dom';
 import AllCharacter from '../character/AllCharacter';
-import Character from '../character/Character';
+import Detail from '../detail/Detail';
 
 const App = () => {
   return (
@@ -19,9 +19,9 @@ const App = () => {
               render={routerProps => <AllCharacter {...routerProps} />}
             />
             <Route
-              path="/:id"
+              path="/character/:id"
               exact
-              render={routerProps => <Character {...routerProps} />}
+              render={routerProps => <Detail {...routerProps} />}
             />
           </Switch>
         </Router>
