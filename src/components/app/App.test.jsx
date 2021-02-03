@@ -4,8 +4,8 @@ import App from './App';
 
 describe('App component', () => {
   afterEach(() => cleanup());
-  it('Renders the amazing Dan Method', () => {
-    const element = true;
-    expect(true).toEqual(element);
+  it('renders App', () => {
+    // const { asFragment } = render(<App />);
+    expect(true).toEqual(true);
   });
 });
