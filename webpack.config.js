@@ -13,7 +13,7 @@ const env = Object.entries({ ...require('dotenv').config(), ...process.env })
 
 // eslint-disable-next-line
 module.exports = {
-  entry: './src/index.js',
+  entry: './src/index.jsx',
   output: {
     filename: 'bundle.[hash].js',
     path: path.resolve(__dirname, './dist'),
